@@ -1,0 +1,24 @@
+%%This is a very basic article template.
+%%There is just one section and two subsections.
+\documentclass[a4paper,12pt]{article}
+\usepackage{my-main}
+
+\begin{document}
+\input{tex/title}
+\tableofcontents
+\newpage
+
+\section{Постановка задачи}
+\input{tex/intro}
+\section{Обзор предметной области}
+\subsection{FPGA}
+\subsection{OpenCL}
+\section{OpenCL для FPGA}
+\section{Диспетчер задач}
+\subsection{Реализация на microblaze}
+\subsection{Реализация в модуле ядра}
+\section{Результаты}
+\section{Заключение}
+\addcontentsline {toc}{section}{\text{Список литературы}}
+\bibliography{biblio/ref}
+\end{document}
