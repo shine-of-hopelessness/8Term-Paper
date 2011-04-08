@@ -2,6 +2,7 @@
 %%There is just one section and two subsections.
 \documentclass[a4paper,12pt]{article}
 \usepackage{my-main}
+\bibliographystyle{plain}
 
 \begin{document}
 \input{tex/title}
@@ -12,13 +13,18 @@
 \input{tex/intro}
 \section{Обзор предметной области}
 \subsection{FPGA}
+\input{tex/fpga}
 \subsection{OpenCL}
+\input{tex/opencl}
 \section{OpenCL для FPGA}
+\input{tex/fpga_opencl}
 \section{Диспетчер задач}
 \subsection{Реализация на microblaze}
+\input{tex/microblaze_scheduler}
 \subsection{Реализация в модуле ядра}
 \section{Результаты}
 \section{Заключение}
+\newpage
 \addcontentsline {toc}{section}{\text{Список литературы}}
 \bibliography{biblio/ref}
 \end{document}
