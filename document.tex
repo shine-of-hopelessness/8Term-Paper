@@ -2,6 +2,8 @@
 %%There is just one section and two subsections.
 \documentclass[a4paper,12pt]{article}
 \usepackage{my-main}
+\newfloat{algo}{thp}{lop}
+\floatname{algo}{Алгоритм}
 \bibliographystyle{plain}
 
 \begin{document}
@@ -22,8 +24,11 @@
 \subsection{Реализация на microblaze}
 \input{tex/microblaze_scheduler}
 \subsection{Реализация в модуле ядра}
+\input{tex/driver_scheduler}
 \section{Результаты}
+\input{tex/results}
 \section{Заключение}
+\input{tex/ending}
 \newpage
 \addcontentsline {toc}{section}{\text{Список литературы}}
 \bibliography{biblio/ref}
